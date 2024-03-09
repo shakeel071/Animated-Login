@@ -1,6 +1,4 @@
 // Function of Hide and Show Password
-var toggleIcon = document.getElementById("togglePassword");
-
 document.getElementById("toggle").addEventListener("click", function () {
     var passwordInput = document.getElementById("password");
     this.classList.toggle("fa-eye");
