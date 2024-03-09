@@ -1,17 +1,11 @@
 // Function of Hide and Show Password
 var toggleIcon = document.getElementById("togglePassword");
 
-toggleIcon.addEventListener("click", function () {
+document.getElementById("toggle").addEventListener("click", function () {
     var passwordInput = document.getElementById("password");
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        toggleIcon.classList.remove("fa-solid", "fa-eye-slash");
-        toggleIcon.classList.add("fa-solid", "fa-eye");
-    } else {
-        passwordInput.type = "password";
-        toggleIcon.classList.remove("fa-solid", "fa-eye");
-        toggleIcon.classList.add("fa-solid", "fa-eye-slash");
-    }
+    this.classList.toggle("fa-eye");
+    this.classList.toggle("fa-eye-slash");
+    passwordInput.type = (passwordInput.type === "password") ? "text" : "password";
 });
 
 // Validating submit Button 

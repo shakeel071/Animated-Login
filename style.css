@@ -136,7 +136,7 @@ form h2{
     color: #01dbc2;
     filter: drop-shadow(0 0 5px #01dbc2);
 }
-#togglePassword {
+#toggle {
     position: absolute;
     right: 10px;
     top:50%;
@@ -167,7 +167,7 @@ form h2{
     .inputBox input[type="submit"]{
         font-size: 0.55em;
     }
-    #togglePassword {
+    #toggle{
         font-size: 0.75em;
     }
     .inputBox input{
