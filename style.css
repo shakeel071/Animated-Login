@@ -167,4 +167,10 @@ form h2{
     .inputBox input[type="submit"]{
         font-size: 0.55em;
     }
+    #togglePassword {
+        font-size: 0.75em;
+    }
+    .inputBox input{
+        font-size: 0.55em;
+    }
 }

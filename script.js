@@ -14,8 +14,18 @@ toggleIcon.addEventListener("click", function () {
 });
 
 document.getElementById("signInButton").addEventListener("click", function (event) {
-      event.preventDefault();
-      document.getElementById("user").value="";
-      document.getElementById("password").value="";
-      alert("User login successful!");
-  });
+    event.preventDefault();
+    var usernameInput = document.getElementById("user").value;
+    var passwordInput = document.getElementById("password").value;
+
+    
+    if (usernameInput.trim() !== "" && passwordInput.trim() !== "") {
+                  document.getElementById("user").value = "";
+        document.getElementById("password").value = "";
+
+      
+        alert("User login successful!");
+    } else {
+        alert("Please enter both username and password.");
+    }
+});
